@@ -1,3 +1,45 @@
+'''
+This project is based on file handling with the help of this we create a or handle h school management system
+1. Sbse phle hum 2 choice rkhege 
+a) Create New school list
+b) Enter the existing school list
+agr admin create new school krta h to vo usme basically school ki new list create krta h
+or agr vo already existing school m enter krta h toh admin ko sare schools ki list show ho jayegi.
+
+jab admin new school create kr leta hai then vo Enter in school kr leta h/skta h.
+Or jb admin existing list m entry krta h uske baad vo school m enter krta h .
+or agr adin chahye to enter in school se phle exit bhi kr skta h.
+Agr admin create new school se enter krta h to hm isme 3 steps kr skte h .
+1. New class name se folder create karna
+2. Class name class list me addon karna
+3. Enter in class and show options of see class studnets
+********************************************************************************************
+or agr existing school list se admin school in enter krta h to hm isme following steps kr skte h...
+1. Register new student
+2. Check existing student by rn
+3. Update student data by rn
+4. Delete existing student by rn
+5. Exit
+************************************************************************************************
+After doing all this steps, we can categories into 4 options
+1. Student registration form
+2. Roll number
+3. Name
+4. Class
+5. Parents name
+6. Address
+7. mobile
+**************************************
+Show student details by roll number
+**************************************
+Update student details by rn
+Show existing student details and then change any of them.
+***********************************************************
+Delete student data by roll number
+---------------------------------------------------------------
+
+
+'''
 #function for creating a new folder 
 import os
 def createNewfolder(foldername):
