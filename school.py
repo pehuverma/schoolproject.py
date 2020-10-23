@@ -53,7 +53,7 @@ def createNewfolder(foldername):
         userchoice()
 
 #function for creating file
-def createfile(fileName):
+def createfile(fileName ):
     try:
         myfile = open('schoolproject/demo/'+fileName +'.txt','x')
     except FileExistsError:
@@ -91,24 +91,26 @@ elif choice == 3:
 else:
     print('\nexit')
 
-class student():
-    # Constructor 
-    def __init__(self, name, rollno, marks1, marks2): 
-        self.name = name 
-        self.rollno = rollno 
-        self.marks1 = marks1 
-        self.marks2 = marks2 
-        # Function to create and append new student    
-    def accept(self, Name, Rollno, marks1, marks2 ): 
-        # use  ' int(input()) ' method to take input from user 
-        ob = student(Name, Rollno, marks1, marks2 ) 
-        list.append(ob) 
-  
-    # Function to display student details      
-    def display(self, ob): 
-            print("Name   : ", ob.name) 
-            print("RollNo : ", ob.rollno) 
-            print("Marks1 : ", ob.marks1) 
-            print("Marks2 : ", ob.marks2) 
-            print("\n")  
+class studentDetail:
+    #creating a constructor
+    def __init__(self, name,rollnumber,course,parentName,address,phoneNumber):
+        self.name = name
+        self.rollnumber = rollnumber
+        self.course = course
+        self.parentName = parentName
+        self.address = address
+        self.phoneNumber = phoneNumber
+    def mydetail(self):
+        print('\n' +self.name +'and' + self.rollnumber +'and' +self.course + 'and'+self.parentName+ 'and'+self.address+ 'and'+self.phoneNumber)
+    def studnetPersnoldetail(self, email) :
+        print('''
+        hello, how are you ?
+        This is you mobile number {}
+        This is you emailid {}
+        '''.format(self.name,self.address,self.phoneNumber,self.parentName,self.course,self.rollnumber)) 
+#Create object
+# #myclass()
+myobj = studentDetail('purnima','21','Bca','Pragy','Delhi','9129392939')      
+myobj.mydetail
+myobj.studnetPersnoldetail('pihu@gmail.com')
 
